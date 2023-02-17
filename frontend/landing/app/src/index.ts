@@ -8,6 +8,8 @@ const bootstrap = async () => {
     dir: process.env.NODE_ENV !== 'production' ? path.join(__dirname, '../ src') : __dirname,
   })
 
+  const PORT = process.env.PORT || 3000;
+
   const handle = app.getRequestHandler()
 
   await app.prepare()
@@ -16,7 +18,7 @@ const bootstrap = async () => {
 
   server.get('*', (req, res) => handle(req, res))
 
-  server.listen(7777)
+  server.listen(PORT)
 }
 
 bootstrap()

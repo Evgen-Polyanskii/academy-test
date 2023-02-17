@@ -5,10 +5,10 @@
   "dependencies": {
     "@ui/layout": "workspace:frontend/ui/layout",
     "@ui/text": "workspace:frontend/ui/text",
-    "react": "16"
+    "react": "17"
   },
   "devDependencies": {
-    "@types/react": "^16"
+    "@types/react": "^17"
   },
   "peerDependencies": {
     "@emotion/styled": "*",

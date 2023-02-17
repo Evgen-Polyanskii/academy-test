@@ -18,19 +18,18 @@ const StateAction: FC = () => {
     // Тут ничего трогать не нужно
     checkResult(body(window))
   }
-
   return (
     <Box width='100%' height='100%' justifyContent='center'>
       <Column justifyContent='center'>
         <Layout>
           <Text fontWeight='medium' fontSize='big' ref={node}>
-            {getRandomizedColorMessage<number>('I have randomized color')}
+            {getRandomizedColorMessage<string>('I have randomized color')}
           </Text>
         </Layout>
         <Layout flexBasis={16} />
         <Layout>
-          <Box cursor='pointer'>
-            <Text fontWeight='medium' fontSize='big' onClick={handleClick}>
+          <Box>
+            <Text fontWeight='medium' fontSize='big' cursor='pointer' onClick={handleClick}>
               Click me
             </Text>
           </Box>
